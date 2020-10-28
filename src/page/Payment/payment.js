@@ -47,9 +47,9 @@ function Payment() {
       .then(({ paymentIntent }) => {
         database
           .collection('users')
-          .doc(user?.uid)
+          .doc('' + user?.uid)
           .collection('orders')
-          .doc(paymentIntent.id)
+          .doc('' + paymentIntent.id)
           .set({
             cart: cart,
             amount: paymentIntent.amount,

@@ -10,7 +10,7 @@ import { useStateValue } from './reducer/StateProvider';
 import Payment from './page/Payment/payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-import Orders from './page/Orders/order';
+import Orders from './page/Orders/orders';
 
 const promise = loadStripe(
   'pk_test_51Hgtq1K6Z2ILZabMxvZiqVhn1zw1fbxWzEiJccPJZita5mDvA2VtKfsVt8Mcu4X0oBBa8bBrjD83nrcAmBVbfEBf001mqcVCCP'
